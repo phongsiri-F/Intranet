@@ -1,0 +1,25 @@
+.group-wrapper {
+    .group-active-cover {
+        height: $g-cover-h;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .groups {
+        position: relative;
+    }
+
+    .group-list {
+        .group-link {
+            white-space: nowrap;
+            color: $gray-600;
+            text-decoration: none;
+            &:hover {
+                background-color: $gray-100;
+            }
+            &.active {
+                background-color: $orange-100;
+            }
+        }
+    }
+}

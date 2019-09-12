@@ -1,0 +1,8 @@
+.btn-link {
+    color: $gray-800 ;
+}
+.btn-like{
+    &.hover{
+        color: blue;
+    }
+}
