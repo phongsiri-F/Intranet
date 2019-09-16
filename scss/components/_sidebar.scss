@@ -1,11 +1,17 @@
 .sidebar {
+  margin-top: 65px;
   display: none;
   width: 240px;
   color: black;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
   background-color: $white;
 
   &.sidebar-sm {
     width: 100px;
+    left: 0;
+
     .section-user {
       width: 100px;
       flex-direction: column;
@@ -41,23 +47,42 @@
     .menu-item {
       bottom: 0;
       width: 100px;
-      
+
       .group-link {
         text-decoration: none;
-
       }
     }
     //-----menu-admin----//
+  }
 
+  &.sidebar-m {
+    margin-left: 100px;
   }
 
   &.sidebar-lg {
     width: 300px;
+    right: 0;
+    .container {
+      .menu-item-right {
+        font-size: 25px;
+      }
+      .title-menu-r{
+        white-space: nowrap;
+      }
+      .item-right{
+        width: 25%;
+      }
+    }
   }
 }
 
 @media (min-width: 768px) {
   .sidebar {
     display: block;
+  }
+}
+@media (max-width: 1150px) {
+  .sidebar {
+    display: none;
   }
 }

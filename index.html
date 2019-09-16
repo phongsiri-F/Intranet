@@ -8,202 +8,259 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
-      <nav
-        class="navbar navbar-light bg-light fixed-top shadow-sm border-bottom bg-white"
-      >
+      <nav class="navbar navbar-light bg-light fixed-top shadow-sm border-bottom bg-white" >
         <span class="navbar-text">
-          Navbar text with an inline element
+            <img src="assets/logo.png" alt="" class="logo">
         </span>
+        
+        <div class="d-flex group-link d-flex align-items-center py-1">
+
+            <a href="#" class="header-icon" id="header_icon_bell" data-toggle="dropdown">
+                <i class="far fa-bell" id="fa_bell"></i>
+                <span class="badge badge-icon">1</span>
+                
+            </a>
+
+            <div class="px-2">
+              <img src="assets/avatar.jpg" alt="avatar" class="avatar">
+            </div>
+            <div class="px-2 w-100">
+              Pakorn Siripat
+            </div>
+            
+          </div>
       </nav>
     </header>
     <div class="app d-flex">
-      <div class="sidebar sidebar-sm border-right" id="sidebar-s"> 
-		  <!-- Section user -->
+      <div class="sidebar sidebar-sm border-right position-fixed" id="sidebar-s" >
+        <!-- Section user -->
         <div class="section-user">
-            <div class="menu-user ">
-                <div class="menu-item p-2 text-center position-relative ">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-home"></i>
-                        </span>
-                        <span class="text-center d-block">หน้าหลัก</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-newspaper"></i>
-                        </span>
-                        <span class="text-center d-block">ฟิตข่าว</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-users"></i>
-                        </span>
-                        <span class="text-center d-block">กลุ่ม</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-home"></i>
-                        </span>
-                        <span class="text-center d-block">ห้องประชุม</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-calendar-alt"></i>
-                        </span>
-                        <span class="text-center d-block">ปฎิทิน</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-phone-alt"></i>
-                        </span>
-                        <span class="text-center d-block">ติดต่อ</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-file-alt"></i>
-                        </span>
-                        <span class="text-center d-block">ไฟล์</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-link"></i>
-                        </span>
-                        <span class="text-center d-block">ลิงก์</span>
-                    </a>
-                </div>
-                <div class="menu-item p-2 text-center position-relative">
-                    <a href="#" class="group-link text-dark">
-                        <span class="group-link-img">
-                            <i class="fas fa-sitemap"></i>
-                        </span>
-                        <span class="text-center d-block">องค์กร</span>
-                    </a>
-                </div>
+          <div class="menu-user ">
+            <div class="menu-item p-2 text-center position-relative ">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-home"></i>
+                </span>
+                <span class="text-center d-block">หน้าหลัก</span>
+              </a>
             </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-newspaper"></i>
+                </span>
+                <span class="text-center d-block">ฟิตข่าว</span>
+              </a>
+            </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-users"></i>
+                </span>
+                <span class="text-center d-block">กลุ่ม</span>
+              </a>
+            </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-home"></i>
+                </span>
+                <span class="text-center d-block">ห้องประชุม</span>
+              </a>
+            </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-calendar-alt"></i>
+                </span>
+                <span class="text-center d-block">ปฎิทิน</span>
+              </a>
+            </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                <span class="text-center d-block">ติดต่อ</span>
+              </a>
+            </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-file-alt"></i>
+                </span>
+                <span class="text-center d-block">ไฟล์</span>
+              </a>
+            </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-link"></i>
+                </span>
+                <span class="text-center d-block">ลิงก์</span>
+              </a>
+            </div>
+            <div class="menu-item p-2 text-center position-relative">
+              <a href="#" class="group-link text-dark">
+                <span class="group-link-img">
+                  <i class="fas fa-sitemap"></i>
+                </span>
+                <span class="text-center d-block">องค์กร</span>
+              </a>
+            </div>
+          </div>
         </div>
         <!-- Section user -->
         <!-- Section Admin -->
-        <div class="menu-item p-2 text-center position-relative-admin position-absolute">
-            <a href="#" class="group-link text-dark">
-                <span class="group-link-img">
-                    <i class="fas fa-user"></i>
-                </span>
-                <span class="text-center d-block">admin</span>
-            </a>
+        <div
+          class="menu-item p-2 text-center position-relative-admin position-absolute"
+        >
+          <a href="#" class="group-link text-dark">
+            <span class="group-link-img">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="text-center d-block">admin</span>
+          </a>
         </div>
         <!-- Section Admin -->
-
       </div>
-      <div class="sidebar border-right">
-      <div class="group-wrapper d-flex flex-column">
-        <div class="group-active-cover" style="background-image: url('assets/side-m-img.jpg');"></div>
-        
-        <div class="pl-4 pt-3 groups" style="overflow-y: auto">
+      <div class="sidebar sidebar-m border-right position-fixed">
+        <div class="group-wrapper d-flex flex-column">
+          <div
+            class="group-active-cover"
+            style="background-image: url('assets/side-m-img.jpg');"
+          ></div>
+          <div class="pl-4 pt-3 groups" style="overflow-y: auto">
             <h4>กลุ่ม</h4>
             <div class="mb-3">
-                <div class="text-dark mb-3">กลุ่มรวม</div>
-                <div class="group-list">
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1 active">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            ThaiPBS
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="mb-3">
-                <div class="text-dark mb-3">สำนักข่าว</div>
-                <div class="group-list">
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            สำนักข่าวต่างประเทศ
-                        </div>
-                    </a>
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            สำนักข่าวหุ้นและกองทุน
-                        </div>
-                    </a>
-                    
-                </div>
+              <div class="text-dark mb-3">กลุ่มรวม</div>
+              <div class="group-list">
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1 active"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    ThaiPBS
+                  </div>
+                </a>
+              </div>
             </div>
 
             <div class="mb-3">
-                <div class="text-dark mb-3">กลุ่มโปรเจกต์</div>
-                <div class="group-list">
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            Smile Project
-                        </div>
-                    </a>
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            UX Website
-                        </div>
-                    </a>
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            SP Intranet
-                        </div>
-                    </a>
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            กีฬาสี 2019
-                        </div>
-                    </a>
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            IT Support
-                        </div>
-                    </a>
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            อัพเดทคอร์สเรียน
-                        </div>
-                    </a>
-                    <a href="#" class="group-link d-flex align-items-center pl-2 py-1">
-                        <img src="assets/side-m-img.jpg" alt="" class="avatar">
-                        <div class="pl-2">
-                            ATX Project
-                        </div>
-                    </a>
-                </div>
+              <div class="text-dark mb-3">สำนักข่าว</div>
+              <div class="group-list">
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    สำนักข่าวต่างประเทศ
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    สำนักข่าวหุ้นและกองทุน
+                  </div>
+                </a>
+              </div>
             </div>
+
+            <div class="mb-3">
+              <div class="text-dark mb-3">กลุ่มโปรเจกต์</div>
+              <div class="group-list">
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    Smile Project
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    UX Website
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    SP Intranet
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    กีฬาสี 2019
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    IT Support
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    อัพเดทคอร์สเรียน
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="group-link d-flex align-items-center pl-2 py-1"
+                >
+                  <img src="assets/side-m-img.jpg" alt="" class="avatar" />
+                  <div class="pl-2">
+                    ATX Project
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-      
+
       <div class="col main-center">
         <div class="container-feed pt-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">ฟิดข่าว</a></li>
+                  <li class="breadcrumb-item"><a href="#">ThaiPBS</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">กิจกรรมม ข่าวกิจกรรมม ประกาศ v</li>
+                </ol>
+              </nav>
           <div class="card feed mb-3">
             <div class="p-3">
               <div class="d-flex">
@@ -218,22 +275,214 @@
               </div>
             </div>
 
-			<!-- seation post content -->
+            <!-- seation post content -->
             <div class="p-3">
               <p>it is my post</p>
-			</div>
-			<!-- seation post content -->
+            </div>
+            <!-- seation post content -->
 
             <div class="p-3 border-top">
               <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-link btn-like">
-                    <i class="far fa-thumbs-up"></i>
+                <button type="button" class="btn btn-link get-like">
+                  <i class="far fa-thumbs-up "></i>
                 </button>
-                <button type="button" class="btn btn-link btn-toggle-comment" data-target="#comment-feed-123">
-                    <i class="far fa-comment"></i>
+                <button
+                  type="button"
+                  class="btn btn-link btn-toggle-comment"
+                  data-target="#comment-feed-123"
+                >
+                  <i class="far fa-comment"></i>
                 </button>
                 <button type="button" class="btn btn-link ml-auto">
-                        <i class="fas fa-share"></i>แชร์
+                  <i class="fas fa-share"></i> แชร์
+                </button>
+              </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="comments border-top d-none" id="comment-feed-123">
+              <div class=" p-3 head-post" style="display: none">
+                <div class="align-items-center py-1 d-flex">
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                  <div class="font-weight-bold pl-2">Pakorn Siripat</div>
+                </div>
+                <div class="pl-2">
+                  <div><p id="demo"></p></div>
+                </div>
+              </div>
+
+              <!-- Comment -->
+              <div class="p-3 post-comment">
+                <div class="d-flex align-items-center"></div>
+                <input
+                  type="text"
+                  class="w-100 border comment-input"
+                  contenteditable="true"
+                  id="myText"
+                  placeholder="comment"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card feed mb-3">
+            <div class="p-3">
+              <div class="d-flex">
+                <div>
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="px-2 w-100">
+                  <div class="font-weight-bold">Pakorn Siripat</div>
+                  <small>Date</small>
+                </div>
+                <div>...</div>
+              </div>
+            </div>
+
+            <!-- seation post content -->
+            <div class="p-3">
+              <p>it is my post</p>
+            </div>
+            <!-- seation post content -->
+
+            <div class="p-3 border-top">
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-link get-like">
+                  <i class="far fa-thumbs-up "></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-link btn-toggle-comment"
+                  data-target="#comment-feed-1234"
+                >
+                  <i class="far fa-comment"></i>
+                </button>
+                <button type="button" class="btn btn-link ml-auto">
+                  <i class="fas fa-share"></i> แชร์
+                </button>
+              </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="comments border-top d-none" id="comment-feed-1234">
+              <div class="d-flex p-3">
+                <div>
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="pl-2">
+                  <div class="font-weight-bold">Pakorn Siripat</div>
+                  <div>Text...</div>
+                </div>
+              </div>
+
+              <!-- Comment -->
+              <div class="p-3">
+                <div class="d-flex align-items-center">
+                  <div
+                    class="comment-input w-100 border"
+                    contenteditable="true"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card feed mb-3">
+            <div class="p-3">
+              <div class="d-flex">
+                <div>
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="px-2 w-100">
+                  <div class="font-weight-bold">Pakorn Siripat</div>
+                  <small>Date</small>
+                </div>
+                <div>...</div>
+              </div>
+            </div>
+
+            <!-- seation post content -->
+            <div class="p-3">
+              <p>it is my post</p>
+            </div>
+            <!-- seation post content -->
+
+            <div class="p-3 border-top">
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-link get-like">
+                  <i class="far fa-thumbs-up "></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-link btn-toggle-comment"
+                  data-target="#comment-feed-123"
+                >
+                  <i class="far fa-comment"></i>
+                </button>
+                <button type="button" class="btn btn-link ml-auto">
+                  <i class="fas fa-share"></i> แชร์
+                </button>
+              </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="comments border-top d-none" id="comment-feed-123">
+              <div class="d-flex p-3">
+                <div>
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="pl-2">
+                  <div class="font-weight-bold">Pakorn Siripat</div>
+                  <div>Text...</div>
+                </div>
+              </div>
+
+              <!-- Comment -->
+              <div class="p-3">
+                <div class="d-flex align-items-center">
+                  <div
+                    class="comment-input w-100 border"
+                    contenteditable="true"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card feed mb-3">
+            <div class="p-3">
+              <div class="d-flex">
+                <div>
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="px-2 w-100">
+                  <div class="font-weight-bold">Pakorn Siripat</div>
+                  <small>Date</small>
+                </div>
+                <div>...</div>
+              </div>
+            </div>
+
+            <!-- seation post content -->
+            <div class="p-3">
+              <p>it is my post</p>
+            </div>
+            <!-- seation post content -->
+
+            <div class="p-3 border-top">
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-link get-like">
+                  <i class="far fa-thumbs-up "></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-link btn-toggle-comment"
+                  data-target="#comment-feed-123"
+                >
+                  <i class="far fa-comment"></i>
+                </button>
+                <button type="button" class="btn btn-link ml-auto">
+                  <i class="fas fa-share"></i> แชร์
                 </button>
               </div>
             </div>
@@ -263,7 +512,190 @@
           </div>
         </div>
       </div>
-      <div class="sidebar sidebar-lg border-left">large</div>
+      <div class="sidebar sidebar-lg border-left position-fixed">
+        <div class="container">
+          <div class="d-flex bd-highlight">
+            <div class="mr-auto p-2 bd-highlight">ลิงก์</div>
+            <div class="p-2 bd-highlight">...</div>
+          </div>
+          <div class=".item-menu-sidebar-right">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="p-2 bd-highlight item-right ">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded shadow-sm active"
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="fas fa-tv"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">TSM</span>
+              </div>
+              <div class="p-2 bd-highlight item-right">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded shadow-sm "
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="fas fa-hand-holding-usd"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">เบิกจ่าย</span>
+              </div>
+              <div class="p-2 bd-highlight item-right">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded shadow-sm "
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="far fa-file-alt"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">E-Document</span>
+              </div>
+              <div class="p-2 bd-highlight item-right">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded shadow-sm "
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="far fa-address-book"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">HRIS</span>
+              </div>
+            </div>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="p-2 bd-highlight item-right">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded "
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="fas fa-tv"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">Sage X3</span>
+              </div>
+              <div class="p-2 bd-highlight item-right">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded shadow-sm "
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="far fa-building"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">Asset</span>
+              </div>
+              <div class="p-2 bd-highlight item-right">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded shadow-sm "
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="fas fa-car-side"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">จองรถ</span>
+              </div>
+              <div class="p-2 bd-highlight item-right">
+                <div
+                  class="menu-item-right p-2 text-center position-relative rounded shadow-sm "
+                >
+                  <a href="#" class="group-link ">
+                    <span class="group-link-img">
+                      <i class="fas fa-wifi"></i>
+                    </span>
+                  </a>
+                </div>
+                <span class="text-center d-block title-menu-r">wifi</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="file-sidebar-right">
+            <div class="title-menu-file-sidebar-right">
+              <div class="d-flex bd-highlight">
+                <div class="mr-auto p-2 bd-highlight">ไฟล์เอกสาร</div>
+                <div class="p-2 bd-highlight">ดูทั้งหมด</div>
+              </div>
+            </div>
+
+            <div class="content-menu-file-sidebar-right">
+              <div class="d-flex group-link d-flex align-items-center py-1">
+                <div class="px-2 w-100 ">
+                  ตรวจสุขภาพประจำปี 2562.pdf
+                </div>
+                <div><i class="fas fa-download item-dowload"></i></div>
+              </div>
+              <div class="d-flex group-link d-flex align-items-center py-1">
+                <div class="px-2">
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="px-2 w-100">
+                  Pakorn Siripat
+                </div>
+                <div>Date</div>
+              </div>
+              <div class="d-flex group-link d-flex align-items-center py-1">
+                <div class="px-2 w-100 ">
+                  คู่มือการเบิกสวัสดิการ 2562.pdf
+                </div>
+                <div><i class="fas fa-download item-dowload"></i></div>
+              </div>
+              <div class="d-flex group-link d-flex align-items-center py-1">
+                <div class="px-2">
+                  <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="px-2 w-100">
+                  Pakorn Siripat
+                </div>
+                <div>Date</div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="file-medie-sidebar-right">
+            <div class="d-flex bd-highlight">
+              <div class="mr-auto p-2 bd-highlight">ไฟล์มีเดีย</div>
+              <div class="p-2 bd-highlight">ดูทั้งหมด</div>
+            </div>
+
+            <div class="card-group">
+              <div class="card">
+                <img
+                  src="/assets/side-m-img.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card">
+                <img
+                  src="/assets/side-m-img.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card">
+                <img
+                  src="/assets/side-m-img.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="lib/fontawesome/js/all.min.js"></script>

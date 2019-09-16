@@ -1,0 +1,26 @@
+.main-center {
+  padding-left: 340px;
+  padding-right: 300px;
+  .breadcrumb{
+    .breadcrumb-item{
+      a{
+        color: $orange-500;
+      }
+     }
+    li{
+      color: $orange-500;
+    }
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    display: inline-block;
+    padding-right: .5rem;
+    color: $orange-500;
+    content: ">";
+  }
+}
+@media (max-width: 1150px) {
+  .main-center {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

@@ -1,8 +1,49 @@
-.btn-link {
-    color: $gray-800 ;
+
+.liked{
+    color: #007bff !important;
 }
-.btn-like{
-    &.hover{
-        color: blue;
+.btn-link{
+    color: black;
+}
+.head-post{
+    display: block ;
+}
+
+.menu-item-right{
+    .group-link {
+        color: #FC5C1E;
+      
     }
+    &.active {
+        background-color: $orange-500;
+        .group-link {
+        color: #fff;
+        }
+    }
+}
+
+.item-dowload{
+    color: #FC5C1E;
+}
+
+//----.badge.badge-icon
+.badge.badge-icon{
+    position: absolute;
+    background-color: #FC5C1E;
+    color: #fff;
+    cursor: default;
+    font-size: .625rem;
+    min-width: 1.2rem;
+    max-width: 1.6875rem;
+    padding: 0 3px;
+    border-radius: 5px;
+    line-height: normal;
+
+    margin-left: -13px;
+    margin-top: -5px;
+}
+
+#fa_bell {
+    font-size: 21px;
+    color: #333;
 }

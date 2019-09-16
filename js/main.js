@@ -20,5 +20,37 @@ $('.menu-item').click(function() {
 
 
 
+//--------------------------------get-like-------------------------------------
+$('.get-like').click(function() {
+    if (!$(this).hasClass('liked')) {
+        $(this).addClass("liked");
+        $(this).find('[data-fa-i2svg]').remove();
+        $(this).append('<i class="fas fa-thumbs-up"></i>');
+    }
+    else {
+        $(this).removeClass("liked");
+        $(this).find('[data-fa-i2svg]').remove();
+        $(this).append('<i class="far fa-thumbs-up"></i>');
+    }
+});
+//--------------------------------get-like-------------------------------------
 
 
+
+//--------------------------------post-comment---------------------------------
+$('input').bind("enterKey",function(e){
+    var x = document.getElementById("myText").value;
+      document.getElementById("demo").innerHTML = x;
+});
+
+$('input').keyup(function(e){
+  if(e.keyCode == 13)//keyCode = 13 คือ กดปุ่ม Enter,
+  {
+     $(this).trigger("enterKey");
+     $(".post-comment").css("display", "none");
+     $(".head-post").css("display","block ");
+
+
+  }
+});
+//--------------------------------post-comment---------------------------------
