@@ -1,4 +1,12 @@
 .logo {
-    height: 32px;
     width: 100px;;
+}
+
+.navbar{
+    height: 50px ;
+}
+.avatar-navbar{
+    height: $avatar-navbar-size;
+    width: $avatar-navbar-size;
+    border-radius: 100%;
 }

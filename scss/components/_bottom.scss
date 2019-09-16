@@ -1,49 +1,58 @@
+.liked {
+  color: #007bff !important;
+}
+.btn-link {
+  color: black;
+}
+.head-post {
+  display: block;
+}
 
-.liked{
-    color: #007bff !important;
-}
-.btn-link{
-    color: black;
-}
-.head-post{
-    display: block ;
-}
-
-.menu-item-right{
+.menu-item-right {
+  .group-link {
+    color: #fc5c1e;
+  }
+  &.active {
+    background-color: $orange-500;
     .group-link {
-        color: #FC5C1E;
-      
+      color: #fff;
     }
-    &.active {
-        background-color: $orange-500;
-        .group-link {
-        color: #fff;
-        }
-    }
+  }
 }
 
-.item-dowload{
-    color: #FC5C1E;
+.item-dowload {
+  color: #fc5c1e;
 }
 
 //----.badge.badge-icon
-.badge.badge-icon{
-    position: absolute;
-    background-color: #FC5C1E;
-    color: #fff;
-    cursor: default;
-    font-size: .625rem;
-    min-width: 1.2rem;
-    max-width: 1.6875rem;
-    padding: 0 3px;
-    border-radius: 5px;
-    line-height: normal;
+.badge.badge-icon {
+  position: absolute;
+  background-color: #fc5c1e;
+  color: #fff;
+  cursor: default;
+  font-size: 0.625rem;
+  min-width: 1.2rem;
+  max-width: 1.6875rem;
+  padding: 0 3px;
+  border-radius: 5px;
+  line-height: normal;
 
-    margin-left: -13px;
-    margin-top: -5px;
+  margin-left: -13px;
+  margin-top: -5px;
 }
 
 #fa_bell {
-    font-size: 21px;
-    color: #333;
+  font-size: 21px;
+  color: #333;
+}
+
+.more-feed {
+  top: 0;
+  right: 0;
+  a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none !important;
+    color: #333 !important;
+  }
 }
