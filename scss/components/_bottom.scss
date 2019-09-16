@@ -17,6 +17,9 @@
     .group-link-img {
       color: #fff;
     }
+    &:hover {
+      background-color: $orange-500;
+    }
   }
   &:hover {
     background-color: $gray-100;
@@ -29,7 +32,6 @@
 
 //----.badge.badge-icon
 .badge-icon {
- 
   display: inline-block;
   background-color: #fc5c1e;
   color: #fff;

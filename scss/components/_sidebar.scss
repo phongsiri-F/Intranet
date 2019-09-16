@@ -71,6 +71,9 @@
       .title-menu-r{
         white-space: nowrap;
         color: black;
+        width: 50px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
       }
       .title-item-file{
         color: $gray-600;
