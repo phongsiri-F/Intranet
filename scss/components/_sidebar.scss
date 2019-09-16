@@ -19,6 +19,7 @@
       flex-direction: column;
 
       .menu-user {
+
         .menu-item {
           width: 100px;
           height: 60px;
@@ -26,7 +27,9 @@
           .group-link {
             text-decoration: none;
           }
-
+          &:hover{
+            background-color: #F8F9FA;
+          }
           &:hover::after {
             background-color: #d1a18a;
             position: absolute;
@@ -84,7 +87,11 @@
       .link-item-right{
         color: black;
       }
+      .card-img-top{
+        height: 50px;
+      }
     }
+
   }
 }
 

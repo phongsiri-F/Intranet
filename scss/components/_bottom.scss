@@ -3,6 +3,10 @@
 }
 .btn-link {
   color: black;
+  &:hover{
+  text-decoration: none;
+
+  }
 }
 .head-post {
   display: block;
