@@ -9,14 +9,17 @@
 }
 
 .menu-item-right {
-  .group-link {
-    color: #fc5c1e;
+  .group-link-img {
+    color: $orange-500;
   }
   &.active {
     background-color: $orange-500;
-    .group-link {
+    .group-link-img {
       color: #fff;
     }
+  }
+  &:hover {
+    background-color: $gray-100;
   }
 }
 
@@ -36,7 +39,6 @@
   padding: 0 3px;
   border-radius: 5px;
   line-height: normal;
-
   margin-left: -13px;
   margin-top: -5px;
 }

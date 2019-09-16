@@ -70,9 +70,16 @@
       }
       .title-menu-r{
         white-space: nowrap;
+        color: black;
+      }
+      .title-item-file{
+        color: $gray-600;
       }
       .item-right{
         width: 25%;
+      }
+      .link-item-right{
+        color: black;
       }
     }
   }
