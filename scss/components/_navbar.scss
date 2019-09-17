@@ -1,7 +1,25 @@
 .logo {
-    width: 100px;;
+  width: 100px;
 }
 
-.navbar{
-    height: 50px ;
+.navbar {
+  height: 50px;
+}
+.search-bar {
+  left: 130px;
+  top: 5px;
+}
+input[type="search"] {
+  width: 100vh;
+  :focus {
+    border-color: none;
+    outline: none;
+  }
+}
+.form-control {
+  &:focus {
+      
+    border-color: #fff;
+    box-shadow: 0 0 0 0.1rem #D0D6DC;
+  }
 }
