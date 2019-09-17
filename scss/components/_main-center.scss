@@ -2,24 +2,24 @@
   padding-left: 340px;
   padding-right: 300px;
 
-  .breadcrumb{
+  .breadcrumb {
     background-color: $gray-950;
-    .breadcrumb-item{
-      a{
+    .breadcrumb-item {
+      a {
         color: $orange-500;
+        text-decoration: none;
       }
-     }
-    li{
+    }
+    li {
       color: $orange-500;
     }
   }
-  .breadcrumb-item+.breadcrumb-item::before{
+  .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     color: $orange-500;
     content: ">";
   }
-  
 }
 @media (max-width: 1150px) {
   .main-center {

@@ -29,11 +29,16 @@
     background-color: $gray-100;
   }
 }
-// .item-right{
-//   &:hover {
-//     background-color: $gray-100;
-//   }
-// }
+.btn-post{
+  top: 10px;
+  right: 0;
+  color: #fff;
+  background-color: $orange-500;
+  &:hover{
+  color: #fff;
+  
+  }
+}
 .item-dowload {
   color: #fc5c1e;
 }
