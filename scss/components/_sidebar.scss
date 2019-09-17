@@ -16,10 +16,11 @@
 
     .section-user {
       width: 100px;
+      
       flex-direction: column;
 
       .menu-user {
-
+        height: 400px;
         .menu-item {
           width: 100px;
           height: 60px;
@@ -52,7 +53,8 @@
     .menu-item {
       bottom: 0;
       width: 100px;
-
+      background-color: $white;
+      border-right: 1px solid #DEE2E6; 
       .group-link {
         text-decoration: none;
       }

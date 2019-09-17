@@ -4,6 +4,7 @@
 
   .breadcrumb {
     background-color: $gray-950;
+    
     .breadcrumb-item {
       a {
         color: $orange-500;
@@ -20,6 +21,7 @@
     color: $orange-500;
     content: ">";
   }
+
 }
 @media (max-width: 1150px) {
   .main-center {

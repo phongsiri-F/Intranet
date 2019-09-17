@@ -55,13 +55,15 @@ $('input').keyup(function(e){
 });
 //--------------------------------post-comment---------------------------------
 
-//-----------------------------------PerfectScrollbar--------------------------
 
-    // const ps = new PerfectScrollbar(".menu-user");
+
+//-------------------------------PerfectScrollbar-------------------------------
+
     const ps = new PerfectScrollbar(".menu-user", {
         wheelSpeed: 2,
         wheelPropagation: false,
         minScrollbarLength: 20
       });
 
-//-----------------------------------PerfectScrollbar--------------------------
+//-------------------------------PerfectScrollbar-------------------------------
+
