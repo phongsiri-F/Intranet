@@ -65,5 +65,11 @@ $('input').keyup(function(e){
         minScrollbarLength: 20
       });
 
+    const ps2 = new PerfectScrollbar(".groups", {
+        wheelSpeed: 2,
+        wheelPropagation: false,
+        minScrollbarLength: 20
+      });
+
 //-------------------------------PerfectScrollbar-------------------------------
 
