@@ -20,6 +20,27 @@ $('.menu-item').click(function() {
 
 
 
+//-------------------------menu-avtive-sidebar-M--------------------------------------------
+
+$('.group-list-sidebar-m').click(function() {
+    $("#sidebar-m .group-list-sidebar-m.active").removeClass("active");
+    $(this).toggleClass("active");
+    
+});
+//-------------------------menu-avtive-sidebar-M--------------------------------------------
+
+
+
+//-------------------------menu-avtive-sidebar-L--------------------------------------------
+$('.menu-item-right').click(function() {
+    $("#sidebar-l .menu-item-right.active").removeClass("active");
+    $(this).toggleClass("active");
+    
+});
+
+//-------------------------menu-avtive-sidebar-L--------------------------------------------
+
+
 //--------------------------------get-like-------------------------------------
 $('.get-like').click(function() {
     if (!$(this).hasClass('liked')) {
