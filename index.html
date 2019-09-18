@@ -256,7 +256,73 @@
          
             <button type="button" class="btn btn-post position-absolute pr-2 pl-2">+ สร้างโพสต์</button>
           </nav>
-          <div class="card feed mb-3">
+
+          <div class="container-feed mx-auto pt-3 "style="display: none">
+            <form method="POST" action="">
+                <div class="card form-post feed mb-3 border-md-0">
+                    <div class="card-header bg-transparent border-bottom-0">
+                        Post
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="form-group">
+                            <div contenteditable="true" class="form-control card-post">
+                                <div class="placeholder text-muted">
+                                    <input contenteditable="true" id="myText" placeholder="What's on your mind?" value="">
+                                </div>
+                            </div>
+ 
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-primary ml-auto" id="btn_post">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card feed card-new-feed mb-3" style="display: none">
+        <div class="new-feed">
+            <div class="p-3">
+                <div class="d-flex">
+                    <div>
+                      <img src="assets/avatar.jpg" alt="avatar" class="avatar" />
+                    </div>
+                    <div class="px-2 w-100">
+                      <div class="font-weight-bold">Pakorn Siripat</div>
+                      <small>Date</small>
+                    </div>
+                    <div class="position-absolute more-feed pr-3">
+                      <a href="#">...</a>
+                    </div>
+                  </div>
+                <div class="card-body pl-0">
+                    <p class="card-text" id="new_content"></p>
+                </div>
+                <div class="p-3 border-top">
+                    <div class="d-flex align-items-center">
+                      <button type="button" class="btn btn-link get-like">
+                        <i class="far fa-thumbs-up "></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-link btn-toggle-comment"
+                        data-target="#comment-feed-123"
+                      >
+                        <i class="far fa-comment"></i>
+                      </button>
+                      <button type="button" class="btn btn-link ml-auto">
+                        <i class="fas fa-share"></i> แชร์
+                      </button>
+                    </div>
+                  </div>
+
+
+                  
+            </div>
+          </div>
+        </div>
+          <div class="card feed mb-3 ">
             <div class="p-3">
               <div class="d-flex">
                 <div>
@@ -484,7 +550,7 @@
                 <button
                   type="button"
                   class="btn btn-link btn-toggle-comment"
-                  data-target="#comment-feed-123"
+                  data-target="#comment-feed-12345"
                 >
                   <i class="far fa-comment"></i>
                 </button>

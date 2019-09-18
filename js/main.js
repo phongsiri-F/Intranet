@@ -94,3 +94,22 @@ $('input').keyup(function(e){
 
 //-------------------------------PerfectScrollbar-------------------------------
 
+
+
+//------------------------------------post--------------------------------------
+$(".btn-post").click(function () {
+    $('.container-feed').css("display", "block");
+});
+
+$("#btn_post").click(function () {
+    $('.card-new-feed').css("display", "block");
+    $('.form-post').css("display", "none");
+});
+
+
+$("#btn_post").click(function () {
+    var x = document.getElementById("myText").value;
+    document.getElementById("new_content").innerHTML = x;
+    $(".new-feed").css("display", "block");
+});
+//------------------------------------post--------------------------------------

@@ -21,6 +21,18 @@
     color: $orange-500;
     content: '>';
   }
+.card-post{
+  border: 0;
+
+}
+  #myText{
+    width: 100%;
+    border: 0;
+
+    &:focus{
+      outline: none;
+    }
+  }
 
 }
 @media (max-width: 1150px) {
