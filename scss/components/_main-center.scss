@@ -2,6 +2,7 @@
   padding-left: 340px;
   padding-right: 300px;
 
+  //---------------------แจ้งเตือนบน navbar-----------------------
   .breadcrumb {
     background-color: $gray-950;
     
@@ -21,6 +22,10 @@
     color: $orange-500;
     content: '>';
   }
+  //---------------------แจ้งเตือนบน navbar-----------------------
+
+
+  //---------------------------post-content---------------------
 .card-post{
   border: 0;
 
@@ -33,6 +38,14 @@
       outline: none;
     }
   }
+
+  .form-control{
+    
+    &:focus{
+      box-shadow: 0 0 0 0.0rem #D0D6DC;
+    }
+  }
+  //---------------------------post-content---------------------
 
 }
 @media (max-width: 1150px) {
