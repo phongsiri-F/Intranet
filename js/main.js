@@ -97,19 +97,46 @@ $('input').keyup(function(e){
 
 
 //------------------------------------post--------------------------------------
-$(".btn-post").click(function () {
+$(".btn-post").click(function () { //สร้างโพส
     $('.container-feed').css("display", "block");
 });
 
 $("#btn_post").click(function () {
     $('.card-new-feed').css("display", "block");
     $('.form-post').css("display", "none");
+    $('.post-img-feed').remove();
 });
 
+
+$(".upimg").click(function () {
+    $(".postimgtest").toggle();
+});
 
 $("#btn_post").click(function () {
     var x = document.getElementById("myText").value;
     document.getElementById("new_content").innerHTML = x;
-    $(".new-feed").css("display", "block");
+     $(".new-feed-img").css("display", "block");
+});
+
+$("#btn_post_img").click(function () {
+    $(".new-feed-img").css("display", "block");
+    $('.postimgtest').css("display", "none");   
+    $('.card-body').remove();
+
+});
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.profile-img-tag').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#profile-img").change(function () {
+    readURL(this);
 });
 //------------------------------------post--------------------------------------
+
