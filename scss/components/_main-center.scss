@@ -47,6 +47,45 @@
   }
   //---------------------------post-content---------------------
 
+
+       //------------------------upload-img-------------
+       input[type="file"] {
+        display: block;
+    }
+
+    .imageThumb {
+        max-height: 75px;
+        border: 2px solid;
+        cursor: pointer;
+        width: 200px;
+    }
+
+    .pip {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+
+        img {
+            width: 106px;
+            height: 100px;
+        }
+    }
+
+    .remove {
+        display: block;
+        background: #444;
+        border: 1px solid black;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .remove:hover {
+        background: white;
+        color: black;
+    }
+
+       //------------------------upload-img-------------
+
 }
 @media (max-width: 1150px) {
   .main-center {
