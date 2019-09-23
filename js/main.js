@@ -107,14 +107,6 @@ $("#btn_post").click(function () {
     $('.post-img-feed').remove();
 });
 
-
-$(".upimg").click(function () {
-    $(".profile-img").addClass();
-    $(".postimgtest").css("display", "block");
-    // $(".postimgtest").toggle();
-    console.log("hello world")
-});
-
 $("#btn_post").click(function () {
     var x = document.getElementById("myText").value;
     document.getElementById("new_content").innerHTML = x;
@@ -125,33 +117,70 @@ $("#btn_post_img").click(function () {
     $(".new-feed-img").css("display", "block");
     $('.postimgtest').css("display", "none");
     $('.card-body').remove();
-
 });
+//-----------------------------------------------เงื่อนไขอัพรูป----------------------------------------------
 
 function readURL(input) {
-    if (input.files && input.files[0]) {
+    var index = 0;
+    var files = input.files;
+
+    var count_img = files.length;
+    var id = "#profile-img-tag_" + count_img + "_";
+
+    for (var i = 0; i < input.files.length; i++) {
+        var file = files[i];
+
         var reader = new FileReader();
 
-        reader.onload = function (e) {
-            $('.profile-img-tag').attr('src', e.target.result);
-        }
-        reader.readAsDataURL(input.files[0]);
+        reader.onload = (function(f) {
+            return function(e) {
+                constand = id + "" + index;
+                $(constand).attr('src', e.target.result);
+                index += 1;
+            };
+        })(file);
+
+        reader.readAsDataURL(file);
     }
+
+
 }
-$("#profile-img").change(function () {
+
+$("#files").change(function () {
     readURL(this);
 });
-//------------------------------------post--------------------------------------
+
+
+$("#btn_post_img_multiline").click(function () {
+  
+    var count_img = $(".pip").length;
+    if (count_img == 1) {
+        $("#card-img-1").css("display", "block");
+        readURL(this);
+    } else if (count_img == 2) {
+        $("#card-img-2").css("display", "block");
+        readURL(this);
+    } else if (count_img == 3) {
+        $("#card-img-3").css("display", "block");
+        readURL(this);
+    } else if (count_img == 4) {
+        $("#card-img-4").css("display", "block");
+        readURL(this);
+    }
+});
+
+//-----------------------------------------------เงื่อนไขอัพรูป----------------------------------------------
+
+
+//-------------------------------------------post-perview-img---------------------------------------------
 $("#files").on("change", function (e) {
     var files = e.target.files,
         filesLength = files.length;
-
     for (var i = 0; i < filesLength; i++) {
         var f = files[i]
         var fileReader = new FileReader();
         fileReader.onload = (function (e) {
-            console.log(e);
-            var file = e.target;
+            
             $("<span class=\"pip\">" +
                 "<img class=\"imageThumb\" src=\"" + e.target.result + "\"/>" +
                 "<br/><span class=\"remove\">X</span>" +
@@ -164,20 +193,6 @@ $("#files").on("change", function (e) {
         fileReader.readAsDataURL(f);
     }
 });
-// $("#btn_post_img_multiline").click(function () {
-//     $(".new-feed-post-img").css("display", "block");
-
-// });
+//-------------------------------------------post-perview-img---------------------------------------------
 
 
-
-
-//-----------------------------------------------เงื่อนไขอัพรูป----------------------------------------------
-var pip = $(".pip");
-for (pip = 0; pip < cars.length; pip++) {
-    if (pip > 1) {
-        $("#btn_post_img_multiline").click(function () {
-            $(".card-img-1").css("display", "block");
-        });
-    }
-}
