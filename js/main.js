@@ -107,11 +107,13 @@ $("#btn_post").click(function () {
     $('.post-img-feed').remove();
 });
 
+//----------------------------------comment--------------------------------------
 $("#btn_post").click(function () {
     var x = document.getElementById("myText").value;
     document.getElementById("new_content").innerHTML = x;
     $(".new-feed-img").css("display", "block");
 });
+
 
 $("#btn_post_img").click(function () {
     $(".new-feed-img").css("display", "block");
@@ -129,9 +131,7 @@ function readURL(input) {
 
     for (var i = 0; i < input.files.length; i++) {
         var file = files[i];
-
         var reader = new FileReader();
-
         reader.onload = (function(f) {
             return function(e) {
                 constand = id + "" + index;
@@ -139,11 +139,8 @@ function readURL(input) {
                 index += 1;
             };
         })(file);
-
         reader.readAsDataURL(file);
     }
-
-
 }
 
 $("#files").change(function () {
@@ -156,15 +153,20 @@ $("#btn_post_img_multiline").click(function () {
     var count_img = $(".pip").length;
     if (count_img == 1) {
         $("#card-img-1").css("display", "block");
+        $(".form-post").css("display", "none");
+        container-feed
         readURL(this);
     } else if (count_img == 2) {
         $("#card-img-2").css("display", "block");
+        $(".form-post").css("display", "none");
         readURL(this);
     } else if (count_img == 3) {
         $("#card-img-3").css("display", "block");
+        $(".form-post").css("display", "none");
         readURL(this);
     } else if (count_img == 4) {
         $("#card-img-4").css("display", "block");
+        $(".form-post").css("display", "none");
         readURL(this);
     }
 });
